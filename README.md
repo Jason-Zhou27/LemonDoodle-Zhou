@@ -13,3 +13,16 @@ Running and Compiling
 			javac -cp doodlepad.jar "%f"
 			and running must require
 			java -cp doodlepad.jar "%f"
+			
+Inserting Drawings:
+- steps:
+	create pad with dimensions
+		use format: Pad pad = new Pad("name", dimx, dimy);
+	outline with lines
+		use format: Line l1 = new Line(posx, posy, dimx, dimy);
+	create border with round rectangle
+		use format: RoundRect r1 = new RoundRect(posx, posy, dimx, dimy, radCorner, radCorner);
+	insert online images
+		bring image to same folder (ideally, jpeg or png)
+		use format: Image im = new Image("imageName.fileExtension", posx, posy, dimx, dimy);
+	
