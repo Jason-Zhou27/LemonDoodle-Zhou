@@ -25,4 +25,6 @@ Inserting Drawings:
 	insert online images
 		bring image to same folder (ideally, jpeg or png)
 		use format: Image im = new Image("imageName.fileExtension", posx, posy, dimx, dimy);
+		
+- can create lines/shapes in repeat by using call to constructor in a loop (see decoration section)
 	

@@ -5,19 +5,29 @@ public class Main {
 	//variables
 	//method
 	public static void main(String[] args){
-		//stand structure
 		Pad pad = new Pad("Stand", 600, 600);
 		RoundRect r1 = new RoundRect(10, 10, 560, 550, 30, 30);
+		//background
+		
+		//grass
+		Line l25 = new Line(10, 500, 100, 500);
+		Line l26 = new Line(520, 500, 570, 500);
+		//stand structure
 		Image im = new Image("lemonadeName.jpg", 200, 280, 180, 115);
 		Line l1 = new Line(100, 300, 100, 560);
 		Line l2 = new Line(500, 300, 500, 560);
 		Line l3 = new Line(100, 300, 500, 300);
 		Line l4 = new Line(100, 370, 500, 370);
 		Line l5 = new Line(100, 490, 500, 490);
-			//3d implementation 
+		//stand decoration
+		for(int i =0; i<10; i++){
+			new Line(100+40*i, 490, 100 +40*i, 560);
+		}	
+		//3d implementation 
 		Line l9 = new Line(100, 490, 120, 460);
 		Line l10 = new Line(500, 490, 520, 460);
-		Line l11 = new Line(120, 460, 520, 460);
+		Line l11 = new Line(120, 460, 350, 460);
+		Line l32 = new Line(430, 460, 520, 460);
 		Line l12 = new Line(500, 560, 520, 530);
 		Line l13 = new Line(520, 530, 520, 460);
 		Line l14 = new Line(520, 350, 520, 280);
@@ -31,7 +41,6 @@ public class Main {
 		Line l21 = new Line(250, 225, 350, 225);
 		Line l23 = new Line(520, 280, 520, 490);
 		Line l24 = new Line(120, 370, 120, 460);
-			//grass line
 		
 		
 		//cups
@@ -57,6 +66,15 @@ public class Main {
         Polygon p1 = new Polygon(cupBody2);
         Oval o3 = new Oval(135, 420, 50, 30);
         Oval o4 = new Oval(145, 470, 30, 20);
+        
+        //ice
+        Rectangle ib1 = new Rectangle(350, 440, 70, 40);
+        Line l27 = new Line(350,440,360,425);
+        Line l28 = new Line(420,440,430,425);
+        Line l29 = new Line(420,480,430,465);
+        Line l30 = new Line(360,425,430,425);
+        Line l31 = new Line(430,425,430,465);
+
 
 		
        
