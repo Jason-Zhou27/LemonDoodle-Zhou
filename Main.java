@@ -8,6 +8,11 @@ public class Main {
 		Pad pad = new Pad("Stand", 600, 600);
 		RoundRect r1 = new RoundRect(10, 10, 560, 550, 30, 30);
 		//background
+		//hills
+		Arc h1 = new Arc(250, 160, 100, 140, 0, 180);
+		h1.setFilled(false);
+		//Arc h2 = new Arc(160, 220, 280, 220, 0, 180);
+		//h2.setFilled(false);
 		
 		//grass
 		Line l25 = new Line(10, 500, 100, 500);
@@ -74,6 +79,15 @@ public class Main {
         Line l29 = new Line(420,480,430,465);
         Line l30 = new Line(360,425,430,425);
         Line l31 = new Line(430,425,430,465);
+        
+        //lemon
+        Oval lemon1 = new Oval(280, 450, 50, 35);
+        Oval lemon2 = new Oval(250, 440, 50, 35);
+        lemon1.setFillColor(255, 255, 0);
+        lemon2.setFillColor(255, 255, 0);
+
+
+
 
 
 		

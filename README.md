@@ -27,4 +27,6 @@ Inserting Drawings:
 		use format: Image im = new Image("imageName.fileExtension", posx, posy, dimx, dimy);
 		
 - can create lines/shapes in repeat by using call to constructor in a loop (see decoration section)
+- can use setFillColor() to make objects have a certain color (RGB)
+- can create arcs by using arc constructor + setFilled(false)
 	
