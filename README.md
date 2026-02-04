@@ -10,9 +10,9 @@ Running and Compiling
 - compile using javac -cp doodlepad.jar Main.java
 - run using java -cp .;doodlepad.jar Main (Windows)
 		- however, sometimes compiling must require
-			javac -cp doodlepad.jar "%f"
+			javac -cp doodlepad.jar Main.java
 			and running must require
-			java -cp doodlepad.jar "%f"
+			java -cp doodlepad.jar "Main.java"
 			
 Inserting Drawings:
 - steps:
@@ -29,4 +29,5 @@ Inserting Drawings:
 - can create lines/shapes in repeat by using call to constructor in a loop (see decoration section)
 - can use setFillColor() to make objects have a certain color (RGB)
 - can create arcs by using arc constructor + setFilled(false)
+- can create polygons by creating ArrayList of points and using a Polygon constructor
 	

@@ -8,11 +8,11 @@ public class Main {
 		Pad pad = new Pad("Stand", 600, 600);
 		RoundRect r1 = new RoundRect(10, 10, 560, 550, 30, 30);
 		//background
-		//hills
-		Arc h1 = new Arc(250, 160, 100, 140, 0, 180);
+		//banner
+		Arc h1 = new Arc(10, 150, 560, 340, 0, 180);
 		h1.setFilled(false);
-		//Arc h2 = new Arc(160, 220, 280, 220, 0, 180);
-		//h2.setFilled(false);
+		Arc h2 = new Arc(10, 110, 560, 340, 0, 180);
+		h2.setFilled(false);
 		
 		//grass
 		Line l25 = new Line(10, 500, 100, 500);
@@ -80,9 +80,38 @@ public class Main {
         Line l30 = new Line(360,425,430,425);
         Line l31 = new Line(430,425,430,465);
         
+        
+        
+        //sugar
+        int xS = 180;
+        int yS = 640;
+        double f = .6;
+        ArrayList<Point> sugarB = new ArrayList<>();
+        ArrayList<Point> sugarS = new ArrayList<>();
+        ArrayList<Point> sugarT = new ArrayList<>();
+        sugarB.add( new Point( 50.0+xS, f*(150.0+yS) ));
+        sugarB.add( new Point( 100.0+xS,  f*(50.0+yS)) );
+        sugarB.add( new Point( 150.0+xS, f*(150.0+yS)) );
+        sugarS.add( new Point(  150.0+xS, f*(150.0+yS)) );
+        sugarS.add( new Point(  160.0+xS, f*(135.0+yS)) );
+        sugarS.add( new Point( 110.0+xS,  f*(35.0+yS)) );
+        sugarS.add( new Point( 100.0+xS, f*(50.0+yS)) );
+        sugarT.add( new Point( 100.0+xS, f*(50.0+yS)) );
+        sugarT.add( new Point( 100.0+xS, f*(20.0+yS)) );
+        sugarT.add( new Point( 110.0+xS, f*(5.0+yS)) );
+        sugarT.add( new Point( 110.0+xS, f*(35.0+yS)) );
+        
+        
+
+        
+        // Pass Point List to Polygon constructor
+        Polygon s1 = new Polygon(sugarB);
+        Polygon s2 = new Polygon(sugarS);
+        Polygon s3 = new Polygon(sugarT);
+        
         //lemon
-        Oval lemon1 = new Oval(280, 450, 50, 35);
-        Oval lemon2 = new Oval(250, 440, 50, 35);
+        Oval lemon1 = new Oval(430, 450, 50, 35);
+        Oval lemon2 = new Oval(400, 440, 50, 35);
         lemon1.setFillColor(255, 255, 0);
         lemon2.setFillColor(255, 255, 0);
 
